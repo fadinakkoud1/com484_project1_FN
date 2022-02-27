@@ -1,0 +1,83 @@
+<!-- tells the browser that this is a HTML5 document -->
+<!DOCTYPE html>
+<!--Define first HTML element of this webpage-->
+<!--HTML Opening tag-->
+<html lang="en">
+  <!--Giving the head element to give browser info about the page-->
+  <head>
+    <!--Adding same style in hight;ight.html-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Defining almost all characters of different languages -->
+    <meta charset="UTF-8" />
+    <!--Configuring the viewport so webpage can look good on all devices (defining initial width and zoom factor of the viewport)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--defining a description of this page when webpage is searched for through browsers-->
+    <meta name="description" content="Lebron James Fan Webpage" />
+    <!--Specifies the itle of the webpage-->
+    <title>Home of the G.O.A.T</title>
+  </head>
+  <body>
+    <!--Created a top navigation bar to explore through the pages of my website-->
+    <header role="banner" class="header">
+      <!--Created a container to hold several elements in it and apply CSS on the whole container (easier)-->
+      <div class="container">
+        <!--Wanted a navigation bar as one row of links users can switch between webpages-->
+        <div class="row justify-content-between">
+          <!--grouped the logo symbol by itself-->
+          <div class="logo">
+            <img
+              class="logo"
+              src="images/lebron_icon.png"
+              alt="Lebron James Logo Thumbnail"
+            />
+          </div>
+          <!--Defined an unordered list of navigational links-->
+          <nav class="nav">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="stats.html">Career Stats</a></li>
+              <li><a href="hightlights.html">Highlights</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <article role="article">
+        <h1 class="welcome">Welcome to the Lebron James Fan Webpage!</h1>
+        <!--I added a div element to make it its own section -->
+        <!--I added a video element to set a video to the background of the intro webpage-->
+        <!--I added the autoplay attribute for the video to immediately play when this webpage is chosen-->
+        <!--I added the loop attribute for the video to keep on replaying when the video has reached its ending (infinite loop)-->
+        <!--I added the muted attribute for the video to mute the sound of video-->
+        <!--I added the src attribute to insert the link of my link-->
+        <!--I added the type attribute for the video to specify what format the video is-->
+        <!--I added the poster attribute for the video to be used like a thumbnail for the video-->
+        <div class="section">
+          <!--wrapped the video in a container -->
+          <div class="video-container">
+            <!--To add some opacity to the background video-->
+            <div class="color-overlay"></div>
+            <video autoplay loop muted>
+              <source
+                src="videos/lebron_background_video.mp4"
+                type="video/mp4"
+                poster="images/lebron_wallpaper.jpg"
+              />
+            </video>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+  <footer role="contentinfo">
+    <p>
+      This website was designed by: Fadi Nakkoud<br />For any questions, email
+      me at:
+      <a href="mailto: fadi.nakkoud.345@my.csun.edu"
+        >fadi.nakkoud.345@my.csun.edu</a
+      >
+    </p>
+  </footer>
+</html>
